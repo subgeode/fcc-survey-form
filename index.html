@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please fill out this survey.</p>
+    </header>
+    <main>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label id="name-label" for="name">Name (required):</label>
+        <input 
+          id="name"
+          type="text" 
+          name="name" 
+          placeholder="e.g., John Doe" 
+          required
+        >
+        <label id="email-label" for="email">Email address (required):</label>
+        <input 
+          id="email"
+          type="email"
+          name="email"
+          placeholder="example@email.com"
+          required
+        >
+        <label id="number-label" for="age">Age (optional):</label>
+        <input 
+          id="number" 
+          type="number" 
+          name="number" 
+          min="13" 
+          max="200"
+          placeholder="Age"
+        >
+      </fieldset>
+      <fieldset>
+          <legend>Why did you choose to visit this website? (Check all that apply)</legend>
+        </fieldset>   
+      <fieldset>
+        <legend>Radio</legend>
+        <input
+          type="radio"
+          id="one-option"
+          name="radio-selection"
+        >
+        <label for="one-option">
+          One
+        </label>
+        <input
+          type="radio"
+          id="two-option"
+          name="radio-selection"
+        >
+        <label for="two-option">
+          Two
+        </label>
+      </fieldset>
+      <fieldset>
+          <legend>
+            How did you find this website? (Check all that apply)
+          </legend>
+
+          <input type="checkbox" id="ads" name="choice" value="ads" />
+          <label for="ads">Social Media Ads</label>
+
+          <input
+            type="checkbox"
+            id="recommendation"
+            name="choice"
+            value="recommendation"
+          />
+          <label for="recommendation">Personal Recommendation</label>
+
+          <input type="checkbox" id="location" name="choice" value="location" />
+          <label for="location">Location</label>
+
+          <input type="checkbox" id="reputation" name="choice" value="reputation" />
+          <label for="reputation">Reputation</label>
+        </fieldset>
+    </form>
+    </main>
+  </body>
+</html>
