@@ -22,6 +22,7 @@
           placeholder="e.g., John Doe" 
           required
         >
+        <br>
         <label id="email-label" for="email">Email address (required):</label>
         <input 
           id="email"
@@ -30,6 +31,7 @@
           placeholder="example@email.com"
           required
         >
+        <br>
         <label id="number-label" for="age">Age (optional):</label>
         <input 
           id="number" 
@@ -39,16 +41,14 @@
           max="200"
           placeholder="Age"
         >
-      </fieldset>
-      <fieldset>
-          <legend>Why did you choose to visit this website? (Check all that apply)</legend>
-        </fieldset>   
+      </fieldset>  
       <fieldset>
         <legend>Radio</legend>
         <input
           type="radio"
           id="one-option"
           name="radio-selection"
+          value="One"
         >
         <label for="one-option">
           One
@@ -57,6 +57,7 @@
           type="radio"
           id="two-option"
           name="radio-selection"
+          value="Two"
         >
         <label for="two-option">
           Two
@@ -70,12 +71,7 @@
           <input type="checkbox" id="ads" name="choice" value="ads" />
           <label for="ads">Social Media Ads</label>
 
-          <input
-            type="checkbox"
-            id="recommendation"
-            name="choice"
-            value="recommendation"
-          />
+          <input type="checkbox" id="recommendation" name="choice" value="recommendation" />
           <label for="recommendation">Personal Recommendation</label>
 
           <input type="checkbox" id="location" name="choice" value="location" />
@@ -84,6 +80,32 @@
           <input type="checkbox" id="reputation" name="choice" value="reputation" />
           <label for="reputation">Reputation</label>
         </fieldset>
+        <fieldset>
+            <legend>
+                Select one:
+            </legend>
+
+            <label for="music">What is your favorite genre of EDM?</label>
+            <br>
+            <select name="music" id="dropdown">
+            <option value="dubstep">Dubstep</option>
+            <option value="house">House</option>
+            <option value="techno">Techno</option>
+            <option value="trance">Trance</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Comments
+            </legend>
+
+            <label for="comment">Any comments or suggestions?</label>
+            <br>
+            <textarea id="comment" name="comment" rows="4" cols="50">
+            Enter your comment here...
+            </textarea>
+        </fieldset>
+        <button id="submit" type="submit">Submit</button>
     </form>
     </main>
   </body>
